@@ -14,7 +14,7 @@ export const generatePaints = async () => {
     const response = await fetch("http://localhost:8088/paintcolors")
     const colors = await response.json()
 
-    let paintOptionsHTML = "<select id='paintcolors'>"
+    let paintOptionsHTML = "<select id='paintcolors'><option value='0'>Select a Paint Color</option>"
 
     const paintColorArray = colors.map(color => `<option value="${color.id}">${color.color}</option>`)
 

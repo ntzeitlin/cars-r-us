@@ -18,7 +18,17 @@ const render = async () => {
         <h1>Cars R' Us: Personal Car Builder</h1>
 
         <section class="choices">
+        
+            <article class="options">
+                <h2>Wheels</h2>
+                ${wheelOptionsHTML}
+            </article>
 
+            <article class="options">
+                <h2>Technologies</h2>
+                ${techOptionsHTML}
+            </article>
+            
             <article class="options">
                 <h2>Paints</h2>
                 ${paintColorOptionsHTML}
@@ -29,15 +39,6 @@ const render = async () => {
                 ${fabricOptionsHTML}
             </article>
 
-            <article class="options">
-                <h2>Wheels</h2>
-                ${wheelOptionsHTML}
-            </article>
-
-            <article class="options">
-                <h2>Technologies</h2>
-                ${techOptionsHTML}
-            </article>
 
         </section>
 

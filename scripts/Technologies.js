@@ -14,7 +14,7 @@ export const generateTechOptions = async () => {
     const response = await fetch("http://localhost:8088/techpackages")
     const techOptions = await response.json()
 
-    let techOptionHTML = "<select id='techoptions'>"
+    let techOptionHTML = "<select id='techoptions'><option value='0'>Select a Tech Package</option>"
 
     const techArray = techOptions.map(tech => `<option value="${tech.id}">${tech.techpackage}</option>`)
     techOptionHTML += techArray.join("")

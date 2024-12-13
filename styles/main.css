@@ -17,17 +17,18 @@ h2 {
 
 .options {
     background-color: lightyellow;
-    margin: 2em;
+    margin: 1em;
     padding: 2em;
     flex-basis: 30%;
     border: 1px dotted black;
     border-radius: 1em;
+    box-shadow: 5px 5px 5px 1px gray;
 }
 
 #orderbutton {
     color: white;
     background-color: darkslategray;
-    margin: 0em 2em 1em 2em;
+    margin: 1em 2em 1em 1em;
     padding: 0.5em 1em;
 }
 

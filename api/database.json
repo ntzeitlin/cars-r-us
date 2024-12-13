@@ -90,76 +90,13 @@
   "orders": [
     {
       "id": 1,
-      "paintcolorId": 1,
-      "fabricId": 1,
+      "paintcolorId": 2,
+      "fabricId": 3,
       "wheelId": 1,
-      "techpackageId": 1
+      "techpackageId": 3
     },
     {
       "id": 2,
-      "paintcolorId": 2,
-      "fabricId": 4,
-      "wheelId": 1,
-      "techpackageId": 1
-    },
-    {
-      "id": 3,
-      "paintcolorId": 1,
-      "fabricId": 1,
-      "wheelId": 1,
-      "techpackageId": 1
-    },
-    {
-      "id": 4,
-      "paintcolorId": 1,
-      "fabricId": 1,
-      "wheelId": 1,
-      "techpackageId": 1
-    },
-    {
-      "id": 5,
-      "paintcolorId": 1,
-      "fabricId": 1,
-      "wheelId": 1,
-      "techpackageId": 1
-    },
-    {
-      "id": 6,
-      "paintcolorId": 1,
-      "fabricId": 1,
-      "wheelId": 3,
-      "techpackageId": 1
-    },
-    {
-      "id": 7,
-      "paintcolorId": 1,
-      "fabricId": 1,
-      "wheelId": 3,
-      "techpackageId": 1
-    },
-    {
-      "id": 8,
-      "paintcolorId": 1,
-      "fabricId": 1,
-      "wheelId": 1,
-      "techpackageId": 1
-    },
-    {
-      "id": 9,
-      "paintcolorId": 1,
-      "fabricId": 1,
-      "wheelId": 1,
-      "techpackageId": 4
-    },
-    {
-      "id": 10,
-      "paintcolorId": 1,
-      "fabricId": 1,
-      "wheelId": 1,
-      "techpackageId": 1
-    },
-    {
-      "id": 11,
       "paintcolorId": 1,
       "fabricId": 1,
       "wheelId": 1,
