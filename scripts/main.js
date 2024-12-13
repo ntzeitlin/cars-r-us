@@ -1,8 +1,10 @@
+import { generateInteriors } from "./Interiors.js"
 import { generatePaints } from "./Paints.js"
 
 const render = async () => {
 
-    const paintColorOptions = await generatePaints()
+    const paintColorOptionsHTML = await generatePaints()
+    const fabricOptionsHTML = await generateInteriors()
 
     const composedHTML = `
         <h1>Cars R' Us: Personal Car Builder</h1>
@@ -11,11 +13,12 @@ const render = async () => {
 
             <article class="options">
                 <h2>Paints</h2>
-                ${paintColorOptions}
+                ${paintColorOptionsHTML}
             </article>
 
             <article class="options">
                 <h2>Interior</h2>
+                ${fabricOptionsHTML}
             </article>
 
             <article class="options">
