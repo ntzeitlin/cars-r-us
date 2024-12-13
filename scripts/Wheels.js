@@ -1,8 +1,10 @@
+import { setWheelType } from "./TransientState.js"
+
 // change handler
 const handleWheelChoice = (changeEvent) => {
     if (changeEvent.target.id === "wheeloptions") {
         const chosenOption = changeEvent.target.value
-        console.log(parseInt(chosenOption))
+        setWheelType(parseInt(chosenOption))
     }
 }
 

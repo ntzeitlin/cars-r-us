@@ -1,9 +1,11 @@
 //change handler
 
+import { setFabricType } from "./TransientState.js"
+
 const handleInteriorChoice = (changeEvent) => {
     if (changeEvent.target.id === "fabricoptions") {
         const chosenOption = changeEvent.target.value
-        console.log(parseInt(chosenOption))
+        setFabricType(parseInt(chosenOption))
     }
 }
 

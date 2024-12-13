@@ -1,8 +1,10 @@
+import { setPaintType } from "./TransientState.js"
+
 // change handler
 const handlePaintChoice = (changeEvent) => {
     if (changeEvent.target.id === "paintcolors") {
         const chosenOption = changeEvent.target.value
-        console.log(parseInt(chosenOption))
+        setPaintType(parseInt(chosenOption))
     }
 }
 
