@@ -1,10 +1,10 @@
 // initialize transient state for Order
 const transientState = {
     "id": 0,
-    "paintcolorId": 0,
-    "fabricId": 0,
-    "wheelId": 0,
-    "techpackageId": 0
+    "paintcolorId": 1,
+    "fabricId": 1,
+    "wheelId": 1,
+    "techpackageId": 1
 }
 
 // transient state setter functions
@@ -30,3 +30,18 @@ export const setTechType = (chosenTech) => {
 
 
 // transient state to permanent state funciton
+
+export const placeOrder = async () => {
+    const postOptions = {
+        method: "POST",
+        headers: {
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify(transientState)
+    }
+
+    const response = await fetch("http://localhost:8088/orders", postOptions)
+
+    const customEvent = new CustomEvent("newOrderPlaced")
+    document.dispatchEvent(customEvent)
+}

@@ -1,4 +1,5 @@
 import { generateInteriors } from "./Interiors.js"
+import { generateOrderButton } from "./OrderButton.js"
 import { generateOrdersHTML } from "./Orders.js"
 import { generatePaints } from "./Paints.js"
 import { generateTechOptions } from "./Technologies.js"
@@ -11,6 +12,7 @@ const render = async () => {
     const wheelOptionsHTML = await generateWheelOptions()
     const techOptionsHTML = await generateTechOptions()
     const ordersHTML = await generateOrdersHTML()
+    const orderButtonHTML = generateOrderButton()
 
     const composedHTML = `
         <h1>Cars R' Us: Personal Car Builder</h1>
@@ -40,7 +42,7 @@ const render = async () => {
         </section>
 
         <section class="order">
-            <p>button goes here</p>
+            ${orderButtonHTML}
         </section>
             
         <section class="custom-order-list">
@@ -48,7 +50,11 @@ const render = async () => {
         </section>
     `
     document.querySelector("#container").innerHTML = composedHTML
-
 }
+
+document.addEventListener("newOrderPlaced", event => {
+    console.log("State of data has changed")
+    render()
+})
 
 render()
