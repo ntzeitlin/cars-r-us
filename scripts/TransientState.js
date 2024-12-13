@@ -1,10 +1,20 @@
 // initialize transient state for Order
-const transientState = {
+let transientState = {
     "id": 0,
     "paintcolorId": 1,
     "fabricId": 1,
     "wheelId": 1,
     "techpackageId": 1
+}
+
+const resetTransientState = () => {
+    transientState = {
+        "id": 0,
+        "paintcolorId": 1,
+        "fabricId": 1,
+        "wheelId": 1,
+        "techpackageId": 1
+    }
 }
 
 // transient state setter functions
@@ -41,7 +51,7 @@ export const placeOrder = async () => {
     }
 
     const response = await fetch("http://localhost:8088/orders", postOptions)
-
+    resetTransientState()
     const customEvent = new CustomEvent("newOrderPlaced")
     document.dispatchEvent(customEvent)
 }

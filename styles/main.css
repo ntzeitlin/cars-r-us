@@ -1,0 +1,47 @@
+* {
+    margin: 0
+}
+
+h1 {
+    padding: 0.25em 0.5em 0;
+}
+
+h2 {
+    padding-bottom: 1em;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.options {
+    background-color: lightyellow;
+    margin: 2em;
+    padding: 2em;
+    flex-basis: 30%;
+    border: 1px dotted black;
+    border-radius: 1em;
+}
+
+#orderbutton {
+    color: white;
+    background-color: darkslategray;
+    margin: 0em 2em 1em 2em;
+    padding: 0.5em 1em;
+}
+
+#custom-order-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-order {
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    margin: 1em;
+    background-color: lightcyan;
+    border: 1px dashed black;
+
+}

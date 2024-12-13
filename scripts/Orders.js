@@ -8,9 +8,11 @@ export const generateOrdersHTML = async () => {
 
     let ordersArray = orders.map((order) => {
         const totalCost = order.paintcolor.price + order.fabric.price + order.wheel.price + order.techpackage.price
-        return `<div>Order #${order.id}: ${order.paintcolor.color} with
+        return `<div class="custom-order">
+        Order #${order.id}: ${order.paintcolor.color} with
          ${order.wheel.wheel} wheels, ${order.fabric.fabric} interior, and the 
-         ${order.techpackage.techpackage} for a total cost of $${totalCost}`
+         ${order.techpackage.techpackage} for a total cost of $${totalCost}
+         </div>`
     })
 
     ordersHTML += ordersArray.join("")
