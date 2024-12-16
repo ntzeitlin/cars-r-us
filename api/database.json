@@ -87,20 +87,22 @@
       "price": 400
     }
   ],
-  "orders": [
+  "vehicletypes": [
     {
       "id": 1,
-      "paintcolorId": 2,
-      "fabricId": 3,
-      "wheelId": 1,
-      "techpackageId": 3
+      "type": "car",
+      "multiple": 1
     },
     {
       "id": 2,
-      "paintcolorId": 1,
-      "fabricId": 1,
-      "wheelId": 1,
-      "techpackageId": 1
+      "type": "SUV",
+      "multiple": 1.5
+    },
+    {
+      "id": 3,
+      "type": "Truck",
+      "multiple": 2.25
     }
-  ]
+  ],
+  "orders": []
 }

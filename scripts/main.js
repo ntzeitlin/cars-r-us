@@ -3,6 +3,7 @@ import { generateOrderButton } from "./OrderButton.js"
 import { generateOrdersHTML } from "./Orders.js"
 import { generatePaints } from "./Paints.js"
 import { generateTechOptions } from "./Technologies.js"
+import { generateTypeHTML } from "./VehicleTypes.js"
 import { generateWheelOptions } from "./Wheels.js"
 
 const render = async () => {
@@ -13,6 +14,7 @@ const render = async () => {
     const techOptionsHTML = await generateTechOptions()
     const ordersHTML = await generateOrdersHTML()
     const orderButtonHTML = generateOrderButton()
+    const vehicleTypeHTML = await generateTypeHTML()
 
     const composedHTML = `
         <h1>Cars R' Us: Personal Car Builder</h1>
@@ -42,6 +44,10 @@ const render = async () => {
 
         </section>
 
+        <section class="choices">
+            ${vehicleTypeHTML}
+        </section>
+        
         <section class="order">
             ${orderButtonHTML}
         </section>

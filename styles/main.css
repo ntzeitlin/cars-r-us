@@ -25,6 +25,10 @@ h2 {
     box-shadow: 5px 5px 5px 1px gray;
 }
 
+.types {
+    padding: 1em;
+}
+
 #orderbutton {
     color: white;
     background-color: darkslategray;

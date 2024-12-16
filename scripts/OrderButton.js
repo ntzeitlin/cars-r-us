@@ -3,6 +3,7 @@ import { placeOrder } from "./TransientState.js"
 // handle click event
 const handleButtonClick = (clickEvent) => {
     if (clickEvent.target.id === "orderbutton") {
+        console.log("button pressed")
         placeOrder()
     }
 }
